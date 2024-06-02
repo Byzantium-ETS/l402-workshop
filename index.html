@@ -10,21 +10,27 @@
 <body>
     <header>
         <div id="userIdDisplay">anonymous</div>
+        <div>
+            <span id="balanceDisplay">Balance: 10000 sats</span>
+            <button id="addFundsButton" class="small-button">Add 1000 sats</button>
+        </div>
     </header>
     <main>
         <h1>L402 Protocol Test Frontend</h1>
         <div class="button-container">
             <button id="payButton" class="modern-button">Pay for Service</button>
             <button id="accessButton" class="modern-button">Access Service</button>
+            <button id="loadTokenButton" class="modern-button">Load Token from File</button>
         </div>
         <div class="box">
             <h2>Macaroon</h2>
             <pre id="macaroonDisplay"></pre>
         </div>
         <div class="box">
-            <h2>Invoice</h2>
+            <h2>Preimage</h2>
             <pre id="invoiceDisplay"></pre>
         </div>
     </main>
+    <input type="file" id="fileInput" style="display: none;" />
 </body>
 </html>

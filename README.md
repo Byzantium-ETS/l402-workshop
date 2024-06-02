@@ -17,52 +17,46 @@ This workshop will explain the L402 protocol and its applications. We'll also pl
 	- How is it different from other solutions?
    
 4. **Why We Use Macaroon?**
-   - Understanding Macaroons and their importance in secure API access.
-   
-5. **Configure the Server Part**
+	- Understanding Macaroons and their importance in secure API access.    
+5. **Configure the L402 server**
    - Set up the server using the [LSAT project](https://github.com/Byzantium-ETS/lsat).
    
 6. **Demo with the Test Web Client**
    - Hands-on demonstration using the test web client to interact with the API.
    
-7. **Exploring Hidden Features with the CLI Demo Client**
-   - Use the CLI demo client to explore additional features.
+7. **Hacking the project**
+	- Create your own custom services.
+	- Restrict an already paid token and share it.
+	- Connect the test client and server to a true node.
+	
 
 ## Dependencies
 - **Go** (Go programming language)
 
 ## Preparation Instructions for Attendees
 
-1. **Install Go**:
-   - Download and install Go from the [official Go website](https://golang.org/dl/).
+1. **Bring your laptop**: You will need a laptop to run the demo and do the following activities.
 
-2. **Clone the LSAT repositories**:
+2. **Install Go**: https://golang.org/dl/.
 
-#### lsat-workshop
- ```sh
-git clone https://github.com/Byzantium-ETS/lsat-workshop.git
-```
-#### lsat (backend)
-```sh
-git clone https://github.com/Byzantium-ETS/lsat.git
-```
-
-3. **Review the L402 Protocol Documentation**:
-   - Familiarize yourself with the L402 protocol by reading the [L402 documentation](https://docs.lightning.engineering/the-lightning-network/l402).
 
 ## Running the Demo
 
 1. **Start the Server**:
-	- Navigate to the cloned LSAT repository and start the server.
+
+Navigate to the cloned LSAT repository and start the server.
 ```sh
+git clone https://github.com/Byzantium-ETS/lsat.git
 cd lsat
 go run server/main.go
 ```
 
 2. **Open the Web Client**:
-	- Open `index.html` in your web browser to view the web client interface.
+
+Open `index.html` in your web browser to view the web client interface.
 
 3. **Interact with the API**:
-   - Use the provided buttons in the web client to interact with the API and observe the responses.
 
 > If the requests fail, check in the `script.js` if the url is the same as in the server.
+
+Use the provided buttons in the web client to interact with the API and observe the responses.

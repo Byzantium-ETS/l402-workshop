@@ -12,7 +12,7 @@ header {
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 15px; /* Increased padding for the header */
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,17 @@ header {
 
 header #userIdDisplay {
     font-size: 16px;
-    padding-left: 15px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header div #balanceDisplay {
+    margin-right: 10px;
 }
 
 main {
@@ -43,18 +53,17 @@ h1 {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Add space between buttons */
-    margin-bottom: 20px; /* Add space below buttons */
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .modern-button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
@@ -68,7 +77,7 @@ h1 {
 .box {
     margin-top: 0;
     margin-bottom: 20px;
-    width: 100%; /* Ensures the box takes up full width */
+    width: 100%;
 }
 
 .box h2 {
