@@ -53,7 +53,7 @@ document.getElementById('payButton').addEventListener('click', async () => {
                         preimage = xorStringToHex(atob(rawInvoice), 255);
 
                         document.getElementById('userIdDisplay').textContent = userId;
-                        document.getElementById('invoiceDisplay').textContent = rawInvoice;
+                        document.getElementById('invoiceDisplay').textContent = btoa(rawInvoice);
                         document.getElementById('macaroonDisplay').textContent = JSON.stringify(macaroonJSON, null, 2);
                     } else {
                         alert('Insufficient funds to pay for the service.');

@@ -55,7 +55,11 @@ go run server/main.go
 
 Open `index.html` in your web browser to view the web client interface.
 
-3. **Interact with the API**:
+3. **Disable your ad-blocker**:
+
+Your ad-blocker might block some request from the client and cause pages to not load. 
+
+4. **Interact with the API**:
 
 > If the requests fail, check in the `script.js` if the url is the same as in the server.
 
