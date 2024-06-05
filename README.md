@@ -64,3 +64,10 @@ Your ad-blocker might block some request from the client and cause pages to not 
 > If the requests fail, check in the `script.js` if the url is the same as in the server.
 
 Use the provided buttons in the web client to interact with the API and observe the responses.
+
+## Additional resources
+
+1. [Bitcoin Faucet](http://bitcoinfaucet.uo1.net/)
+2. [ Mastering the Lightning Network (LN)](https://github.com/lnbook/lnbook)
+3. [phoenixd is the server equivalent of the popular phoenix wallet for mobile](https://phoenix.acinq.co/server)
+4. [Stacker News makes internet communities that pay you Bitcoin](https://stacker.news/)
