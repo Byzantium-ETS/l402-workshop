@@ -1,5 +1,6 @@
 let balance = 10000;
 let preimage = ""
+let serviceName = "image"
 
 function updateBalanceDisplay() {
     document.getElementById('balanceDisplay').textContent = `Balance: ${balance} sats`;
@@ -20,8 +21,8 @@ document.getElementById('addFundsButton').addEventListener('click', () => {
 
 document.getElementById('payButton').addEventListener('click', async () => {
     try {
-        const response = await fetch('http://localhost:8080/', {
-            method: 'GET',
+        const response = await fetch(`http://localhost:8080/service/${serviceName}:0`, {
+            method: 'PUT',
             headers: {
                 'Authorization': '',
                 'Content-Type': 'application/json'
@@ -84,7 +85,7 @@ document.getElementById('accessButton').addEventListener('click', async () => {
         }
 
         const token = `${btoa(macaroonDisplay)}:${preimage}`;
-        const response = await fetch('http://localhost:8080/', {
+        const response = await fetch(`http://localhost:8080/service/${serviceName}:0`, {
             method: 'GET',
             headers: {
                 'Authorization': `L402 ${token}`,
